@@ -172,6 +172,7 @@ const gaPageIdentifier = Astro.url.pathname
     <Toaster client:only='react' />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
+    <CommandMenu client:idle />
     <PageSponsor
       gaPageIdentifier={briefTitle || gaPageIdentifier}
       client:load
