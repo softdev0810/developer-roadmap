@@ -29,3 +29,5 @@ To prevent and mitigate buffer overflow vulnerabilities, the following strategie
 - Regularly scan code for vulnerabilities and conduct security audits.
 
 By being aware of buffer overflow vulnerabilities and implementing these preventive strategies, you can protect your software from potential attacks and keep your systems secure.
+
+- [@article@Buffer Overflows (Hacksplaining)](https://www.hacksplaining.com/exercises/buffer-overflows)

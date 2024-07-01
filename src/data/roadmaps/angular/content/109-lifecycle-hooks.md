@@ -10,5 +10,6 @@ The following life cycle hooks of angular are :
 
 Visit the following resources to learn more:
 
-- [What is Life Cycle Hooks? - Angular.io ](https://angular.io/guide/lifecycle-hooks)
-- [The life cycle hooks of angular - Blog ](https://blog.logrocket.com/angular-lifecycle-hooks/)
+- [@official@What is Life Cycle Hooks? - Angular.io ](https://angular.io/guide/lifecycle-hooks)
+- [@article@The life cycle hooks of angular - Blog ](https://blog.logrocket.com/angular-lifecycle-hooks/)
+- [@feed@Explore top posts about React Hooks](https://app.daily.dev/tags/react-hooks?ref=roadmapsh)

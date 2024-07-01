@@ -18,4 +18,5 @@ Following are the commonly used performance testing types, but not limited to:
 
 Visit the following resources to learn more:
 
-- [Performance Testing Tutorial – Types (Example)](https://www.guru99.com/performance-testing.html)
+- [@article@Performance Testing Tutorial – Types (Example)](https://www.guru99.com/performance-testing.html)
+- [@feed@Explore top posts about Performance](https://app.daily.dev/tags/performance?ref=roadmapsh)

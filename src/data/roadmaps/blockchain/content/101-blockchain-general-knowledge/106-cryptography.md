@@ -4,8 +4,8 @@ Cryptography, or cryptology, is the practice and study of techniques for secure 
 
 Visit the following resources to learn more:
 
-- [Cryptography](https://en.wikipedia.org/wiki/Cryptography)
-- [What is Cryptography](https://www.synopsys.com/glossary/what-is-cryptography.html)
-- [Asymmetric Encryption - Simply explained](https://youtu.be/AQDCe585Lnc)
-- [What is Cryptography?](https://www.youtube.com/watch?v=6_Cxj5WKpIw)
-- [Learn Cryptography](https://www.youtube.com/watch?v=trHox1bN5es)
+- [@article@Cryptography](https://en.wikipedia.org/wiki/Cryptography)
+- [@article@What is Cryptography](https://www.synopsys.com/glossary/what-is-cryptography.html)
+- [@video@Asymmetric Encryption - Simply explained](https://youtu.be/AQDCe585Lnc)
+- [@video@What is Cryptography?](https://www.youtube.com/watch?v=6_Cxj5WKpIw)
+- [@feed@Explore top posts about Cryptography](https://app.daily.dev/tags/cryptography?ref=roadmapsh)

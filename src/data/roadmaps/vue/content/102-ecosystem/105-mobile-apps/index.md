@@ -4,4 +4,6 @@ Building a mobile application with Vue.js is not impossible. In fact, you can bu
 
 Visit the following resources to learn more:
 
-- [Comparing Vue.js mobile app development frameworks](https://blog.logrocket.com/comparing-vue-js-mobile-app-development-frameworks/#whyusevuejstobuildmobileapps)
+- [@article@Comparing Vue.js mobile app development frameworks](https://blog.logrocket.com/comparing-vue-js-mobile-app-development-frameworks/#whyusevuejstobuildmobileapps)
+- [@article@Native Script + Vue](https://nativescript-vue.org/)
+- [@feed@Explore top posts about Mobile Development](https://app.daily.dev/tags/mobile?ref=roadmapsh)

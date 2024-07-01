@@ -4,5 +4,6 @@ MobX is an open source state management tool. MobX, a simple, scalable, and stan
 
 Visit the following resources to learn more:
 
-- [MobX Official Website](https://mobx.js.org/)
-- [Intro to MobX Tutorial](https://www.youtube.com/watch?v=WQQq1QbYlAw)
+- [@article@MobX Official Website](https://mobx.js.org/)
+- [@video@Intro to MobX Tutorial](https://www.youtube.com/watch?v=WQQq1QbYlAw)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

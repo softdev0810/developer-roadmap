@@ -1,14 +1,11 @@
 ---
 title: 'Jump Servers: What, Why and How'
 description: 'Learn what is a Jump Server and how to set it up for SSH access.'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Jump Servers: What, Why and How - roadmap.sh'
   description: 'Learn what is a Jump Server and how to set it up for SSH access.'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2023-03-20
 sitemap:

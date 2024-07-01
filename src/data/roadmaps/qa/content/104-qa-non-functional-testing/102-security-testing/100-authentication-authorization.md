@@ -8,4 +8,5 @@ For example, a web app may have both regular users and admins, with the admins b
 
 Visit the following resources to learn more:
 
-- [OWASP Website](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+- [@article@OWASP Website](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+- [@feed@Explore top posts about Authentication](https://app.daily.dev/tags/authentication?ref=roadmapsh)

@@ -6,5 +6,6 @@ HtmlUnit is not a generic unit testing framework. It is specifically a way to si
 
 Visit the following resources to learn more:
 
-- [HtmlUnit Website](https://htmlunit.sourceforge.io/)
-- [Introduction to HtmlUnit](https://www.baeldung.com/htmlunit)
+- [@article@HtmlUnit Website](https://htmlunit.sourceforge.io/)
+- [@article@Introduction to HtmlUnit](https://www.baeldung.com/htmlunit)
+- [@feed@Explore top posts about HTML](https://app.daily.dev/tags/html?ref=roadmapsh)

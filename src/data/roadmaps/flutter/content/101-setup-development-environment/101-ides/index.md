@@ -11,6 +11,7 @@ These IDEs provide a variety of features and tools to assist in the development 
 
 Learn more from the following links:
 
-- [Setting up and Editor](https://docs.flutter.dev/get-started/editor)
-- [Android Studio and IntelliJ](https://docs.flutter.dev/development/tools/android-studio)
-- [IDEs and editors for Flutter](https://dart.dev/tools#ides-and-editors)
+- [@article@Setting up and Editor](https://docs.flutter.dev/get-started/editor)
+- [@article@Android Studio and IntelliJ](https://docs.flutter.dev/development/tools/android-studio)
+- [@article@IDEs and editors for Flutter](https://dart.dev/tools#ides-and-editors)
+- [@feed@Explore top posts about DevTools](https://app.daily.dev/tags/devtools?ref=roadmapsh)

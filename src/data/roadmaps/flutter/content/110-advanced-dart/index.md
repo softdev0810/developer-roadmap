@@ -17,4 +17,5 @@ By mastering these concepts, you will be able to write more efficient and mainta
 
 Learn more from the following resources:
 
-- [Tutorials - Dart](https://dart.dev/tutorials)
+- [@official@Tutorials - Dart](https://dart.dev/tutorials)
+- [@feed@Explore top posts about Dart](https://app.daily.dev/tags/dart?ref=roadmapsh)

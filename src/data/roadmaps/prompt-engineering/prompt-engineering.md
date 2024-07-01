@@ -6,7 +6,6 @@ briefTitle: 'Prompt Engineering'
 briefDescription: 'Step by step guide to learning Prompt Engineering'
 title: 'Prompt Engineering Roadmap'
 description: 'Step by step guide to learning Prompt Engineering'
-isNew: true
 hasTopics: true
 dimensions:
   width: 968
@@ -23,7 +22,7 @@ seo:
   keywords:
     - 'prompt engineering tutorial'
     - 'step by step prompt engineering'
-    - 'prompt engineering roadmap 2023'
+    - 'prompt engineering roadmap 2024'
     - 'guide to learning prompt engineering'
     - 'prompt engineering roadmap'
     - 'prompt engineering'

@@ -1,14 +1,11 @@
 ---
 title: 'Introduction to LLMs'
 description: 'What are LLMs, how does ChatGPT and other LLMs work?'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Introduction to LLMs - roadmap.sh'
   description: 'What are LLMs, how does ChatGPT and other LLMs work?'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2023-05-16
 sitemap:
@@ -33,7 +30,7 @@ OpenAI has been a major contributor to this space in the past few years with the
 
 ## Training an LLM Model
 
-On a high level, training an LLM model involves thre steps i.e. data collection, training and evaluation. 
+On a high level, training an LLM model involves three steps i.e. data collection, training and evaluation.
 
 - **Data Collection** The first step is to collect the data that will be used to train the model. The data can be collected from various sources such as Wikipedia, news articles, books, websites etc.
 
@@ -49,7 +46,7 @@ On a high level, LLMs can be categorized into two types i.e. Base LLMs and Instr
 
 ### Base LLMs
 
-Base LLMs are the LLMs which are designed to predict the next word based on the training data. They are not designed to answer questions, carry out conversations or help solve problems. For example, if you give a base LLM the sentence "In this book about LLMs, we will discuss", it might complete this sentence and give you "In this book about LLMs, we will discsus **what LLMs are, how they work, and how you can leverage them in your applications.**." Or if you give it "What are some famous social networks?", instead of answering it might give back "Why do people use social networks?" or "What are some of the benefits of social networks?". As you can see, it is giving us relevant text but it is not answering the question. This is where the Instruction tuned LLMs come in to the picture.
+Base LLMs are the LLMs which are designed to predict the next word based on the training data. They are not designed to answer questions, carry out conversations or help solve problems. For example, if you give a base LLM the sentence "In this book about LLMs, we will discuss", it might complete this sentence and give you "In this book about LLMs, we will discuss **what LLMs are, how they work, and how you can leverage them in your applications.**." Or if you give it "What are some famous social networks?", instead of answering it might give back "Why do people use social networks?" or "What are some of the benefits of social networks?". As you can see, it is giving us relevant text but it is not answering the question. This is where the Instruction tuned LLMs come in to the picture.
 
 ### Instruction tuned LLMs
 
@@ -63,11 +60,8 @@ Instruction Tuned LLMs = Base LLMs + Further Tuning + RLHF
 
 To build an Instruction Tuned LLM, a Base LLM is taken and is further trained using a large dataset covering sample "Instructions" and how the model should perform as a result of those instructions. The model is then fine-tuned using a technique called "Reinforcement Learning with Human Feedback" (RLHF) which allows the model to learn from human feedback and improve its performance over time.
 
-
 ## Conclusion
 
 LLMs are a powerful tool that can be used to solve a wide range of language-related tasks. They are being used in various industries such as healthcare, finance, education etc. to automate processes and improve efficiency. LLMs have the potential to revolutionize the way we interact with computers and make our lives easier.
 
 And that's it for this guide. We have some exciting AI related content coming up in the next few weeks. Stay tuned!
-
-

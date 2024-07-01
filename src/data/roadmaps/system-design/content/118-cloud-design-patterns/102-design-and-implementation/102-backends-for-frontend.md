@@ -4,4 +4,5 @@ Create separate backend services to be consumed by specific frontend application
 
 To learn more, visit the following links:
 
-- [Backends for Frontends pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
+- [@article@Backends for Frontends pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
+- [@feed@Explore top posts about Frontend Development](https://app.daily.dev/tags/frontend?ref=roadmapsh)

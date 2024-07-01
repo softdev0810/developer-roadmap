@@ -1,14 +1,11 @@
 ---
 title: '5 Free Resources to Master LLMs'
 description: 'Dive into the world of LLMs with these free resources'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: '5 Free Resources to Master Language Models (LLMs) - roadmap.sh'
   description: 'Looking to dive into the fascinating world of Language Models (LLMs)? Discover the top 5 free resources that will help you learn and excel in understanding LLMs. From comprehensive tutorials to interactive courses, this blog post provides you with the ultimate guide to sharpen your skills and unravel the potential of language models. Start your journey today and become a pro in LLMs without spending a dime!'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2023-05-19
 sitemap:

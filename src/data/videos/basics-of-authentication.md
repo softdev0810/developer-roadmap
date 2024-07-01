@@ -2,12 +2,9 @@
 title: 'Basics of Authentication'
 description: 'Learn everything you need to know about authentication with this Authentication Series'
 duration: '5 minutes'
-isNew: true
+isNew: false
 date: 2022-09-21
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'

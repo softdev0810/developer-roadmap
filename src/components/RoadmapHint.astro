@@ -1,80 +1,57 @@
 ---
+import AstroIcon from './AstroIcon.astro';
 import Icon from './AstroIcon.astro';
+import { RoadmapTitleQuestion } from './RoadmapTitleQuestion.tsx';
+import ResourceProgressStats from './ResourceProgressStats.astro';
 
 export interface Props {
   roadmapId: string;
   tnsBannerLink?: string;
+  titleQuestion?: string;
+  titleAnswer?: string;
 }
 
-const { roadmapId, tnsBannerLink = '' } = Astro.props;
-
-const hasTNSBanner = !!tnsBannerLink;
-const roadmapTitle =
-  roadmapId === 'devops'
-    ? 'DevOps'
-    : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
+const {
+  roadmapId,
+  titleQuestion = '',
+  titleAnswer = '',
+  tnsBannerLink,
+} = Astro.props;
+const hasTitleQuestion = titleQuestion && titleAnswer;
+const hasTnsBanner = !!tnsBannerLink;
 ---
 
 <div
   class:list={[
-    'mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0',
-    {
-      'sm:-mb-[82px]': hasTNSBanner,
-      'sm:-mb-[65px]': !hasTNSBanner,
-    },
+    'mb-0 mt-4 rounded-md border-0 bg-white sm:mt-7 sm:border',
+    ...(hasTnsBanner
+      ? [
+          {
+            'sm:-mb-[110px]': hasTitleQuestion,
+            'sm:-mb-[81px]': !hasTitleQuestion,
+          },
+        ]
+      : [
+          {
+            'sm:-mb-[88px]': hasTitleQuestion,
+            'sm:-mb-[65px]': !hasTitleQuestion,
+          },
+        ]),
   ]}
 >
+  <ResourceProgressStats
+    resourceId={roadmapId}
+    resourceType='roadmap'
+    hasSecondaryBanner={Boolean(hasTitleQuestion)}
+  />
+
   {
-    hasTNSBanner && (
-      <div class='hidden border-b bg-gray-100 px-2 py-1.5 sm:block'>
-        <p class='text-sm'>
-          Get the latest {roadmapTitle} news from our sister site{' '}
-          <a
-            href={tnsBannerLink}
-            target='_blank'
-            class='font-semibold underline'
-          >
-            TheNewStack.io
-          </a>
-        </p>
-      </div>
+    hasTitleQuestion && (
+      <RoadmapTitleQuestion
+        client:load
+        question={titleQuestion}
+        answer={titleAnswer}
+      />
     )
   }
-
-  <!-- Desktop: Roadmap Resources - Alert -->
-  <div
-    class:list={[
-      'hidden sm:flex justify-between px-2 bg-white items-center',
-      {
-        'rounded-bl-md rounded-br-md': hasTNSBanner,
-        'rounded-md': !hasTNSBanner,
-      },
-    ]}
-  >
-    <p class='text-sm'>
-      <span
-        class='mr-0.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
-        >New</span
-      >
-      Resources are here, try clicking nodes
-    </p>
-
-    <a
-      href={`/${roadmapId}/topics`}
-      class='inline-flex items-center justify-center rounded-md px-1 py-1.5 text-sm font-medium text-gray-500 hover:text-black'
-    >
-      <Icon icon='search' />
-      <span class='ml-2'>Search Topics</span>
-    </a>
-  </div>
-
-  <!-- Mobile - Roadmap resources alert -->
-  <p
-    class='relative block rounded-md border border-yellow-500 bg-white px-2 py-1.5 text-sm text-yellow-700 sm:hidden'
-  >
-    Click roadmap items for resources or visit{' '}
-    <a href={`/${roadmapId}/topics`} class='text-blue-700 underline'>
-      resources list</a
-    >.
-  </p>
 </div>

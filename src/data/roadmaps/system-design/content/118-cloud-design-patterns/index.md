@@ -4,4 +4,5 @@ Cloud design patterns are solutions to common problems that arise when building 
 
 To learn more, visit the following links:
 
-- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [@article@Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

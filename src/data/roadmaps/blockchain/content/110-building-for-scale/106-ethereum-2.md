@@ -4,5 +4,6 @@ Ethereum 2.0 marks a long-anticipated upgrade to the Ethereum public mainnet. De
 
 Visit the following resources to learn more:
 
-- [What Is Ethereum 2.0?](https://consensys.net/blog/blockchain-explained/what-is-ethereum-2/)
-- [What Is Ethereum 2.0? Understanding The Merge](https://www.forbes.com/advisor/investing/cryptocurrency/ethereum-2/)
+- [@article@What Is Ethereum 2.0?](https://consensys.net/blog/blockchain-explained/what-is-ethereum-2/)
+- [@article@What Is Ethereum 2.0? Understanding The Merge](https://www.forbes.com/advisor/investing/cryptocurrency/ethereum-2/)
+- [@feed@Explore top posts about Ethereum](https://app.daily.dev/tags/ethereum?ref=roadmapsh)

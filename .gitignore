@@ -1,3 +1,6 @@
+.idea
+.temp
+
 # build output
 dist/
 .output/
@@ -25,3 +28,8 @@ pnpm-debug.log*
 /playwright/.cache/
 tests-examples
 *.csv
+
+/editor/*
+!/editor/readonly-editor.tsx
+!/editor/renderer/renderer.ts
+!/editor/renderer/index.tsx

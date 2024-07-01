@@ -1,4 +1,4 @@
-import { useEffect } from 'preact/hooks';
+import { useEffect } from 'react';
 
 export function useKeydown(keyName: string, callback: any, deps: any[] = []) {
   useEffect(() => {
@@ -13,6 +13,7 @@ export function useKeydown(keyName: string, callback: any, deps: any[] = []) {
         event.metaKey &&
         event.key.toLowerCase() === keyName.replace('mod_', '').toLowerCase()
       ) {
+        event.preventDefault();
         callback();
       }
     };

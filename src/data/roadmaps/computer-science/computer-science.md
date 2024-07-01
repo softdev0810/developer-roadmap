@@ -6,7 +6,7 @@ briefTitle: 'Computer Science'
 briefDescription: 'Curriculum with free resources for a self-taught developer.'
 title: 'Computer Science'
 description: 'Computer Science curriculum with free resources for a self-taught developer.'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968
@@ -23,10 +23,10 @@ seo:
   keywords:
     - 'computer science roadmap'
     - 'computer science'
-    - 'computer science roadmap 2023'
+    - 'computer science roadmap 2024'
     - 'guide to computer science'
     - 'software engineer roadmap'
-    - 'software engineer roadmap 2023'
+    - 'software engineer roadmap 2024'
     - 'self-taught computer science roadmap'
     - 'computer science skills'
     - 'computer science skills test'

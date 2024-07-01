@@ -4,5 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [GitLab Website](https://gitlab.com/)
-- [GitLab Documentation](https://docs.gitlab.com/)
+- [@opensource@GitLab Website](https://gitlab.com/)
+- [@article@GitLab Documentation](https://docs.gitlab.com/)
+- [@feed@Explore top posts about GitLab](https://app.daily.dev/tags/gitlab?ref=roadmapsh)

@@ -4,4 +4,5 @@ CPU Interrupts are a way for the CPU to communicate with the rest of the compute
 
 Visit the following resources to learn more:
 
-- [Video on Interrupts](https://youtu.be/iKlAWIKEyuw)
+- [@video@Video on Interrupts](https://youtu.be/iKlAWIKEyuw)
+- [@feed@Explore top posts about Computing](https://app.daily.dev/tags/computing?ref=roadmapsh)

@@ -6,5 +6,6 @@ Credentials such as passwords, SSH keys, certificates, API keys, backup codes, a
 
 Visit the following resources to learn more:
 
-- [AWS Secrets Management Website](https://aws.amazon.com/secrets-manager/)
-- [Vault Website](https://www.vaultproject.io/)
+- [@article@AWS Secrets Management Website](https://aws.amazon.com/secrets-manager/)
+- [@article@Vault Website](https://www.vaultproject.io/)
+- [@feed@Explore top posts about Secrets Management](https://app.daily.dev/tags/secrets-management?ref=roadmapsh)

@@ -4,4 +4,5 @@ Federation (or functional partitioning) splits up databases by function. The fed
 
 Visit the following resources to learn more:
 
-- [Database Federation](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#database-federation)
+- [@article@Database Federation](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#database-federation)
+- [@feed@Explore top posts about Database](https://app.daily.dev/tags/database?ref=roadmapsh)

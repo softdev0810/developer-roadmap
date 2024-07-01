@@ -6,5 +6,6 @@ In an ASP.NET application, Datadog can be used to monitor and analyze the perfor
 
 Visit the following links:
 
-- [Documentation of Datadog](https://www.datadoghq.com/)
-- [Configuring the .NET Core with Datadog](https://docs.datadoghq.com/tracing/trace_collection/library_config/dotnet-core/?tab=environmentvariables)
+- [@article@Documentation of Datadog](https://www.datadoghq.com/)
+- [@article@Configuring the .NET Core with Datadog](https://docs.datadoghq.com/tracing/trace_collection/library_config/dotnet-core/?tab=environmentvariables)
+- [@feed@Explore top posts about DevOps](https://app.daily.dev/tags/devops?ref=roadmapsh)

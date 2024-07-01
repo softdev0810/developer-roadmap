@@ -20,12 +20,12 @@ Given below is the sample `tsconfig.json` file:
     "strict": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "exclude": ["node_modules"]
   },
+  "exclude": ["node_modules"],
   "include": ["src"]
 }
 ```
 
 Learn more from the following links:
 
-- [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content)
+- [@article@What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content)

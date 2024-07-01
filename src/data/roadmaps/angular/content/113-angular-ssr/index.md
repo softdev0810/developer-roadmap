@@ -4,5 +4,6 @@ A normal Angular application executes in the browser, rendering pages in the DOM
 
 Visit the following resources to learn more:
 
-- [Angular Universal](https://angular.io/guide/universal)
-- [Rendering on the Web](https://web.dev/rendering-on-the-web/)
+- [@official@Angular Universal](https://angular.io/guide/universal)
+- [@article@Rendering on the Web](https://web.dev/rendering-on-the-web/)
+- [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

@@ -4,4 +4,5 @@ Distributed applications and services running in the cloud are, by their nature,
 
 Visit the following to learn more:
 
-- [Monitoring and Diagnostics Guidance](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring)
+- [@article@Monitoring and Diagnostics Guidance](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

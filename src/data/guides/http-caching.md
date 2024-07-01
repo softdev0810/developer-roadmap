@@ -1,10 +1,7 @@
 ---
 title: 'HTTP Caching'
 description: 'Everything you need to know about web caching'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'HTTP Caching - roadmap.sh'
   description: 'Everything you need to know about web caching'
@@ -67,7 +64,7 @@ Unlike browser cache which serves a single user, proxy caches may serve hundreds
 
 A Reverse proxy cache or surrogate cache is implemented close to the origin servers in order to reduce the load on the server. Unlike proxy caches which are implemented by ISPs etc to reduce the bandwidth usage in a network, surrogates or reverse proxy caches are implemented near the origin servers by the server administrators to reduce the load on the server.
 
-![Reverse Proxy Cache](http://i.imgur.com/Eg4Cru3.png)
+![Reverse Proxy Cache](https://i.imgur.com/Eg4Cru3.png)
 
 Although you can control the reverse proxy caches (since it is implemented by you on your server) you can not avoid or control browser and proxy caches. And if your website is not configured to use these caches properly, it will still be cached using whatever defaults are set on these caches.
 

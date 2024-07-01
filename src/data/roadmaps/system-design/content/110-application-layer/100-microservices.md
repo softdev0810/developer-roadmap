@@ -6,5 +6,7 @@ Pinterest, for example, could have the following microservices: user profile, fo
 
 To learn more, visit the following links:
 
-- [Introduction to Microservices](https://aws.amazon.com/microservices/)
-- [Microservices - Wikipedia](https://en.wikipedia.org/wiki/Microservices)
+- [@article@Introduction to Microservices](https://aws.amazon.com/microservices/)
+- [@article@Microservices - Wikipedia](https://en.wikipedia.org/wiki/Microservices)
+- [@article@Microservices](https://martinfowler.com/articles/microservices.html)
+- [@feed@Explore top posts about Microservices](https://app.daily.dev/tags/microservices?ref=roadmapsh)

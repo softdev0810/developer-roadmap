@@ -6,4 +6,5 @@ The main advantage of using P2P architecture is that it allows for a more decent
 
 Learn more from the following links:
 
-- [Peer to Peer Architecture](https://student.cs.uwaterloo.ca/~cs446/1171/Arch_Design_Activity/Peer2Peer.pdf)
+- [@article@Peer to Peer Architecture](https://student.cs.uwaterloo.ca/~cs446/1171/Arch_Design_Activity/Peer2Peer.pdf)
+- [@feed@Explore top posts about Peer-to-Peer](https://app.daily.dev/tags/peer-to-peer?ref=roadmapsh)

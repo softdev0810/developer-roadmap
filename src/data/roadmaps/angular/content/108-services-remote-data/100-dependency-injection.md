@@ -4,5 +4,6 @@ Dependency Injection (DI) is a design pattern that creates the dependencies of a
 
 Visit the following resources to learn more:
 
-- [What is Dependency Injection ? - angular.io ](https://angular.io/guide/dependency-injection)
-- [Introduction of Dependency injection](https://www.youtube.com/watch?v=OFPIGlxunL0)
+- [@official@What is Dependency Injection ? - angular.io ](https://angular.io/guide/dependency-injection)
+- [@video@Introduction of Dependency injection](https://www.youtube.com/watch?v=OFPIGlxunL0)
+- [@feed@Explore top posts about Dependency Injection](https://app.daily.dev/tags/dependency-injection?ref=roadmapsh)

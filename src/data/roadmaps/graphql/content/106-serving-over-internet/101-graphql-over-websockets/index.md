@@ -4,4 +4,5 @@ The WebSocket API is an advanced technology that makes it possible to open a two
 
 Learn more from the following links:
 
-- [GraphQL over WebSockets](https://the-guild.dev/blog/graphql-over-websockets)
+- [@article@GraphQL over WebSockets](https://the-guild.dev/blog/graphql-over-websockets)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

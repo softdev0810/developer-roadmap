@@ -10,5 +10,6 @@ ETL tools enable data integration strategies by allowing companies to gather dat
 
 Visit the following resources to learn more:
 
-- [What is ETL?](https://www.snowflake.com/guides/what-etl)
-- [ETL explained](https://www.youtube.com/watch?v=OW5OgsLpDCQ)
+- [@article@What is ETL?](https://www.snowflake.com/guides/what-etl)
+- [@video@ETL explained](https://www.youtube.com/watch?v=OW5OgsLpDCQ)
+- [@feed@Explore top posts about ETL](https://app.daily.dev/tags/etl?ref=roadmapsh)

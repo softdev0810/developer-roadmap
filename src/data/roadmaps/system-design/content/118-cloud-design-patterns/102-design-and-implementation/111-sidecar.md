@@ -6,4 +6,5 @@ This pattern is named Sidecar because it resembles a sidecar attached to a motor
 
 To learn more, visit the following links:
 
-- [Sidecar pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)
+- [@article@Sidecar pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)
+- [@feed@Explore top posts about Infrastructure](https://app.daily.dev/tags/infrastructure?ref=roadmapsh)

@@ -6,4 +6,5 @@ Go applications are built into a single self contained binary making installing 
 
 Visit the following resources to learn more:
 
-- [Command-line Interfaces (CLIs)](https://go.dev/solutions/clis)
+- [@official@Command-line Interfaces (CLIs)](https://go.dev/solutions/clis)
+- [@feed@Explore top posts about Golang](https://app.daily.dev/tags/golang?ref=roadmapsh)

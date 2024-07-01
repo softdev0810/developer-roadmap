@@ -1,6 +1,6 @@
-# instanceOf operator
+# instanceof operator
 
-The `instanceof` operator is a way to narrow down the type of a variable. It is used to check if an object is an instance of a class, interface, or type.
+The `instanceof` operator is a way to narrow down the type of a variable. It is used to check if an object is an instance of a class.
 
 ```typescript
 class Bird {
@@ -24,4 +24,4 @@ if (pet instanceof Bird) {
 
 Learn more from the following links:
 
-- [instanceOf Operator](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#instanceof-narrowing)
+- [@article@instanceOf Operator](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#instanceof-narrowing)

@@ -4,5 +4,9 @@ C++ is a powerful general-purpose programming language. It can be used to develo
 
 Visit the following resources to learn more:
 
-- [Learn Cpp](https://learncpp.com/)
-- [C++ Reference](https://en.cppreference.com/)
+- [@article@Learn Cpp](https://learncpp.com/)
+- [@article@C++ Reference](https://en.cppreference.com/)
+- [@article@C++ TutorialsPoint](https://www.tutorialspoint.com/cplusplus/index.htm)
+- [@article@W3Schools C++](https://www.w3schools.com/cpp/default.asp)
+- [@roadmap.sh@C++ Roadmap](https://roadmap.sh/cpp)
+- [@feed@Explore top posts about C Programming](https://app.daily.dev/tags/c?ref=roadmapsh)

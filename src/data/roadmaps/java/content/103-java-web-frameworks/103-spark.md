@@ -4,6 +4,7 @@ Spark is a micro framework for creating web applications in Kotlin and Java 8. S
 
 Visit the following resources to learn more:
 
-- [Spark Java](https://sparkjava.com/)
-- [Intro to Spark Java Framework](https://www.baeldung.com/spark-framework-rest-api)
-- [What is Spark java?](https://www.javatpoint.com/spark-java)
+- [@article@Spark Java](https://sparkjava.com/)
+- [@article@Intro to Spark Java Framework](https://www.baeldung.com/spark-framework-rest-api)
+- [@article@What is Spark java?](https://www.javatpoint.com/spark-java)
+- [@feed@Explore top posts about Apache Spark](https://app.daily.dev/tags/spark?ref=roadmapsh)

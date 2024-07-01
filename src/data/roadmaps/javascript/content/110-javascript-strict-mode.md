@@ -10,5 +10,6 @@ Strict mode makes several changes to normal JavaScript semantics:
 
 Visit the following resources to learn more:
 
-- [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
-- [Strict mode in JavaScript](https://javascript.info/strict-mode)
+- [@article@Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+- [@article@Strict mode in JavaScript](https://javascript.info/strict-mode)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

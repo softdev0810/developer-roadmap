@@ -1,8 +1,14 @@
-import type { FunctionComponent } from 'preact';
-import { useState } from 'preact/hooks';
+import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
 
-const EmailSignupForm: FunctionComponent = () => {
+type EmailSignupFormProps = {
+  isDisabled?: boolean;
+  setIsDisabled?: (isDisabled: boolean) => void;
+};
+
+export function EmailSignupForm(props: EmailSignupFormProps) {
+  const { isDisabled, setIsDisabled } = props;
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
@@ -10,10 +16,11 @@ const EmailSignupForm: FunctionComponent = () => {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const onSubmit = async (e: Event) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setIsLoading(true);
+    setIsDisabled?.(true);
     setError('');
 
     const { response, error } = await httpPost<{ status: 'ok' }>(
@@ -22,20 +29,21 @@ const EmailSignupForm: FunctionComponent = () => {
         email,
         password,
         name,
-      }
+      },
     );
 
     if (error || response?.status !== 'ok') {
       setIsLoading(false);
+      setIsDisabled?.(false);
       setError(
-        error?.message || 'Something went wrong. Please try again later.'
+        error?.message || 'Something went wrong. Please try again later.',
       );
 
       return;
     }
 
     window.location.href = `/verification-pending?email=${encodeURIComponent(
-      email
+      email,
     )}`;
   };
 
@@ -91,13 +99,11 @@ const EmailSignupForm: FunctionComponent = () => {
 
       <button
         type="submit"
-        disabled={isLoading}
+        disabled={isLoading || isDisabled}
         className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
         {isLoading ? 'Please wait...' : 'Continue to Verify Email'}
       </button>
     </form>
   );
-};
-
-export default EmailSignupForm;
+}

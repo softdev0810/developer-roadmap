@@ -4,4 +4,5 @@ Integration Testing is a type of testing where software modules are integrated l
 
 Visit the following resources to learn more:
 
-- [Integration Testing Tutorial](https://www.guru99.com/integration-testing.html)
+- [@article@Integration Testing Tutorial](https://www.guru99.com/integration-testing.html)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

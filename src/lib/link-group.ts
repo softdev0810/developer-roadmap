@@ -26,17 +26,25 @@ function linkGroupPathToId(filePath: string): string {
  */
 export async function getAllLinkGroups(): Promise<LinkGroupFileType[]> {
   const linkGroups = await import.meta.glob<LinkGroupFileType>(
-    '/src/link-groups/*.md',
+    '/src/data/link-groups/*.md',
     {
       eager: true,
-    }
+    },
   );
 
-  const linkGroupFiles = Object.values(linkGroups);
-  const enrichedLinkGroups = linkGroupFiles.map((linkGroupFile) => ({
+  return Object.values(linkGroups).map((linkGroupFile) => ({
     ...linkGroupFile,
     id: linkGroupPathToId(linkGroupFile.file),
   }));
+}
 
-  return enrichedLinkGroups;
+export async function getLinkGroupById(
+  groupId: string,
+): Promise<LinkGroupFileType> {
+  const linkGroup = await import(`../data/link-groups/${groupId}.md`);
+
+  return {
+    ...linkGroup,
+    id: linkGroupPathToId(linkGroup.file),
+  };
 }

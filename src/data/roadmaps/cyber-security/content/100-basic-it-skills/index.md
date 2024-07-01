@@ -64,3 +64,6 @@ As the digital world is constantly evolving, so too are cyber threats. Therefore
 - Regularly backing up data
 
 By honing these basic IT skills, you will be better prepared to navigate and protect your digital life, as well as making the most of the technology at your fingertips.
+
+- [@video@IT skills Training for beginners | Complete Course](https://www.youtube.com/watch?v=On6dsIp5yw0)
+- [@feed@Explore top posts about Career](https://app.daily.dev/tags/career?ref=roadmapsh)

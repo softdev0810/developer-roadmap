@@ -9,5 +9,7 @@ Another way to look at performance vs scalability:
 
 To learn more, visit the following links:
 
-- [Scalability, Availability & Stability Patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
-- [A Word on Scalability](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
+- [@article@Scalability, Availability & Stability Patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
+- [@article@A Word on Scalability](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
+- [@article@Performance vs Scalability](https://blog.professorbeekums.com/performance-vs-scalability/)
+- [@feed@Explore top posts about Performance](https://app.daily.dev/tags/performance?ref=roadmapsh)

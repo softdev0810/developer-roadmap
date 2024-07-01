@@ -1,9 +1,9 @@
 import Cookies from 'js-cookie';
-import { handleAuthRequired } from '../Authenticator/authenticator';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
 
 export function logout() {
-  Cookies.remove(TOKEN_COOKIE_NAME);
+  removeAuthToken();
+
   // Reloading will automatically redirect the user if required
   window.location.reload();
 }
@@ -16,13 +16,22 @@ function bindEvents() {
       ...target.closest('button')?.dataset,
     };
 
+    const accountDropdown = document.querySelector('[data-account-dropdown]');
+
     // If the user clicks on the logout button, remove the token cookie
     if (dataset.logoutButton !== undefined) {
+      e.preventDefault();
       logout();
     } else if (dataset.showMobileNav !== undefined) {
       document.querySelector('[data-mobile-nav]')?.classList.remove('hidden');
     } else if (dataset.closeMobileNav !== undefined) {
       document.querySelector('[data-mobile-nav]')?.classList.add('hidden');
+    } else if (
+      accountDropdown &&
+      !target?.closest('[data-account-dropdown]') &&
+      !accountDropdown.classList.contains('hidden')
+    ) {
+      accountDropdown.classList.add('hidden');
     }
   });
 
@@ -36,6 +45,10 @@ function bindEvents() {
     });
 
   document
+    .querySelector('[data-command-menu]')
+    ?.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('command.k'));
+    });
       .querySelector('[data-command-menu]')
       ?.addEventListener('click', () => {
         window.dispatchEvent(new CustomEvent('command.k'));

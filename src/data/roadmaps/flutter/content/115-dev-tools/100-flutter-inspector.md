@@ -11,5 +11,6 @@ With the Flutter Inspector, developers can:
 
 Visit the following resources to learn more:
 
-- [Using the Flutter inspector](https://docs.flutter.dev/development/tools/devtools/inspector)
-- [How to Use the Flutter Inspector](https://www.youtube.com/watch?v=CcLfGJZS8ns)
+- [@article@Using the Flutter inspector](https://docs.flutter.dev/development/tools/devtools/inspector)
+- [@video@How to Use the Flutter Inspector](https://www.youtube.com/watch?v=CcLfGJZS8ns)
+- [@feed@Explore top posts about Flutter](https://app.daily.dev/tags/flutter?ref=roadmapsh)

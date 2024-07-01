@@ -1,19 +1,27 @@
 import Cookies from 'js-cookie';
-import type { FunctionComponent } from 'preact';
-import { useState } from 'preact/hooks';
+import type { FormEvent } from 'react';
+import { useState } from 'react';
 import { httpPost } from '../../lib/http';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 
-const EmailLoginForm: FunctionComponent<{}> = () => {
+type EmailLoginFormProps = {
+  isDisabled?: boolean;
+  setIsDisabled?: (isDisabled: boolean) => void;
+};
+
+export function EmailLoginForm(props: EmailLoginFormProps) {
+  const { isDisabled, setIsDisabled } = props;
+
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState('');
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const handleFormSubmit = async (e: Event) => {
+  const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setIsDisabled?.(true);
     setError('');
 
     const { response, error } = await httpPost<{ token: string }>(
@@ -21,12 +29,12 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       {
         email,
         password,
-      }
+      },
     );
 
     // Log the user in and reload the page
     if (response?.token) {
-      Cookies.set(TOKEN_COOKIE_NAME, response.token);
+      setAuthToken(response.token);
       window.location.reload();
 
       return;
@@ -35,12 +43,13 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
     // @todo use proper types
     if ((error as any).type === 'user_not_verified') {
       window.location.href = `/verification-pending?email=${encodeURIComponent(
-        email
+        email,
       )}`;
       return;
     }
 
     setIsLoading(false);
+    setIsDisabled?.(false);
     setError(error?.message || 'Something went wrong. Please try again later.');
   };
 
@@ -73,7 +82,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         onInput={(e) => setPassword(String((e.target as any).value))}
       />
 
-      <p class="mb-3 mt-2 text-sm text-gray-500">
+      <p className="mb-3 mt-2 text-sm text-gray-500">
         <a
           href="/forgot-password"
           className="text-blue-800 hover:text-blue-600"
@@ -88,13 +97,11 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
 
       <button
         type="submit"
-        disabled={isLoading}
+        disabled={isLoading || isDisabled}
         className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
         {isLoading ? 'Please wait...' : 'Continue'}
       </button>
     </form>
   );
-};
-
-export default EmailLoginForm;
+}

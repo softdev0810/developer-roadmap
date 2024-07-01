@@ -4,6 +4,7 @@ There are different repository hosting services with the most famous one being G
 
 Visit the following resources to learn more:
 
-- [GitHub: Where the world builds software](https://github.com)
-- [GitLab: Iterate faster, innovate together](https://gitlab.com)
-- [BitBucket: The Git solution for professional teams](https://bitbucket.com)
+- [@opensource@GitHub: Where the world builds software](https://github.com)
+- [@opensource@GitLab: Iterate faster, innovate together](https://gitlab.com)
+- [@article@BitBucket: The Git solution for professional teams](https://bitbucket.com)
+- [@feed@Explore top posts about QA](https://app.daily.dev/tags/qa?ref=roadmapsh)

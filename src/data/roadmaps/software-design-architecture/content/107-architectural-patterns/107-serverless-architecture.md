@@ -6,4 +6,5 @@ This architecture pattern mainly focuses on the business logic and event-driven 
 
 Learn more from the following links:
 
-- [Serverless Architecture Patterns in AWS](https://waswani.medium.com/serverless-architecture-patterns-in-aws-edeab0e46a32)
+- [@article@Serverless Architecture Patterns in AWS](https://waswani.medium.com/serverless-architecture-patterns-in-aws-edeab0e46a32)
+- [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

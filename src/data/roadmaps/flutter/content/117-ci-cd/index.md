@@ -13,4 +13,5 @@ The key components of a CI/CD pipeline for a Flutter app are:
 
 Learn more from the following links:
 
-- [CI/CD - Flutter](https://docs.flutter.dev/deployment/cd)
+- [@article@CI/CD - Flutter](https://docs.flutter.dev/deployment/cd)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

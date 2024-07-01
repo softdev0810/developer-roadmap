@@ -4,5 +4,6 @@ A\* is a graph traversal algorithm that is used to find the shortest path betwee
 
 Visit the following resources to learn more:
 
-- [A\* Search Algorithm - Wikipedia](https://en.wikipedia.org/wiki/A*_search_algorithm)
-- [A\* Pathfinding (E01: algorithm explanation)](https://www.youtube.com/watch?v=-L-WgKMFuhE)
+- [@article@A\* Search Algorithm - Wikipedia](https://en.wikipedia.org/wiki/A*_search_algorithm)
+- [@video@A\* Pathfinding (E01: algorithm explanation)](https://www.youtube.com/watch?v=-L-WgKMFuhE)
+- [@feed@Explore top posts about Data Science](https://app.daily.dev/tags/data-science?ref=roadmapsh)

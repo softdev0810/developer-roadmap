@@ -4,4 +4,5 @@ In JavaScript, all exceptions are simply objects. While the majority of exceptio
 
 Visit the following resources to learn more:
 
-- [Throwing Exceptions in JavaScript](https://rollbar.com/guides/javascript/how-to-throw-exceptions-in-javascript)
+- [@article@Throwing Exceptions in JavaScript](https://rollbar.com/guides/javascript/how-to-throw-exceptions-in-javascript)
+- [@video@try, catch, finally, throw (video)](https://youtu.be/cFTFtuEQ-10)

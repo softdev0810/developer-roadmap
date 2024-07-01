@@ -6,5 +6,6 @@ Encapsulation is achieved by using access modifiers (such as "public," "private,
 
 Learn more from the following links:
 
-- [Overview of Encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>)
-- [Tutorial - What is encapsulation in programming?](https://www.youtube.com/watch?v=sNKKxc4QHqA)
+- [@article@Overview of Encapsulation](https://en.wikipedia.org/wiki/Encapsulation_\(computer_programming\))
+- [@video@Tutorial - What is encapsulation in programming?](https://www.youtube.com/watch?v=sNKKxc4QHqA)
+- [@feed@Explore top posts about General Programming](https://app.daily.dev/tags/general-programming?ref=roadmapsh)

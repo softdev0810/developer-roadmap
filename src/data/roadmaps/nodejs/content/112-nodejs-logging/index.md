@@ -4,5 +4,7 @@
 
 Visit the following resources to learn more:
 
-- [Node.js Logging](https://stackify.com/node-js-logging/)
-- [Logging best practices](https://blog.appsignal.com/2021/09/01/best-practices-for-logging-in-nodejs.html)
+- [@article@Node.js Logging](https://stackify.com/node-js-logging/)
+- [@article@Logging best practices](https://blog.appsignal.com/2021/09/01/best-practices-for-logging-in-nodejs.html)
+- [@article@Logging](https://stackify.com/node-js-logging/)
+- [@feed@Explore top posts about Logging](https://app.daily.dev/tags/logging?ref=roadmapsh)

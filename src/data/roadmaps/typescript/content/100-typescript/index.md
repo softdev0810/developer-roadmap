@@ -9,7 +9,10 @@ The main benefits of using TypeScript include:
 - Improved Maintainability
 - Backwards Compatibility
 
-Learn more from the folowing links:
+Learn more from the following links:
 
-- [Overview of TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [@article@Overview of TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [@article@TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [@article@What Is TypeScript?](https://thenewstack.io/what-is-typescript/)
+- [@video@Video: Where TypeScript Excels](https://youtu.be/BUo7B6UuoJ4)
+- [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

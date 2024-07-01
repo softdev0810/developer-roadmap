@@ -20,13 +20,18 @@ When inserting a document with a Date field, you can store the date value as fol
 db.events.insertOne({ title: 'Sample Event', eventDate: new Date() });
 ```
 
-You can also specifically store the current date and time using MongoDB's `$currentDate` operator:
+You can also store the current date and time using MongoDB's `$currentDate` operator when updating a document:
 
 ```javascript
-db.events.insertOne({
-  title: 'Sample Event',
-  eventDate: { $currentDate: { $type: 'date' } },
-});
+db.events.updateOne(
+  { _id: ObjectId('your_document_id') },
+  {
+    $set: {
+      title: 'Sample Event',
+      eventDate: { $currentDate: { $type: 'date' } }
+    }
+  }
+);
 ```
 
 ## Querying Dates
@@ -64,3 +69,5 @@ db.events.aggregate([
 ```
 
 This query groups events by the day and year, providing a count of events for each day.
+
+- [@official@MongoDB Documentation Date](https://www.mongodb.com/docs/manual/reference/method/Date/)

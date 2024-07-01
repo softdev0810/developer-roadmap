@@ -10,4 +10,5 @@ Usage monitoring tracks how the features and components of an application are us
 
 Learn more from the following links:
 
-- [Usage Monitoring](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#usage-monitoring)
+- [@article@Usage Monitoring](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#usage-monitoring)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

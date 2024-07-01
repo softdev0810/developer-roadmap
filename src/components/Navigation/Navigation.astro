@@ -1,23 +1,74 @@
 ---
+import { Menu } from 'lucide-react';
 import Icon from '../AstroIcon.astro';
-import AccountDropdown from './AccountDropdown.astro';
+import { NavigationDropdown } from '../NavigationDropdown';
+import { AccountDropdown } from './AccountDropdown';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
+    <div class='flex items-center gap-5'>
+      <a
+        class='flex items-center text-lg font-medium text-white'
+        href='/'
+        aria-label='roadmap.sh'
+      >
+        <Icon icon='logo' />
+      </a>
     <a class='flex items-center text-lg font-medium text-white' href='/' aria-label="roadmap.sh">
       <Icon icon='logo' />
     </a>
 
-    <!-- Desktop navigation items -->
-    <ul class='hidden space-x-5 sm:flex sm:items-center'>
-      <li>
-        <a href='/roadmaps' class='text-gray-400 hover:text-white'>Roadmaps</a>
-      </li>
-      <li>
-        <a href='/best-practices' class='text-gray-400 hover:text-white'
-          >Best Practices</a
+      <a
+          href='/teams'
+          class='group inline sm:hidden relative !mr-2 text-blue-300 hover:text-white'
+      >
+        Teams
+
+        <span class='absolute -right-[11px] top-0'>
+            <span class='relative flex h-2 w-2'>
+              <span
+                  class='absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75'
+              ></span>
+              <span class='relative inline-flex h-2 w-2 rounded-full bg-sky-500'
+              ></span>
+            </span>
+          </span>
+      </a>
+
+      <!-- Desktop navigation items -->
+      <div class='hidden space-x-5 sm:flex sm:items-center'>
+        <NavigationDropdown client:load />
+        <a href='/get-started' class='text-gray-400 hover:text-white'>
+          Start Here
+        </a>
+        <a 
+          href='/teams'
+          class='group relative !mr-2 text-blue-300 hover:text-white'
         >
+          Teams
+          <span class='absolute -right-[11px] top-0'>
+            <span class='relative flex h-2 w-2'>
+              <span
+                class='absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75'
+              ></span>
+              <span class='relative inline-flex h-2 w-2 rounded-full bg-sky-500'
+              ></span>
+            </span>
+          </span>
+        </a>
+        <a
+          href='/ai' class='text-gray-400 hover:text-white'> AI Roadmaps</a>
+        <button
+          data-command-menu
+          class='hidden items-center rounded-md border border-gray-800 px-2.5 py-1.5 text-sm text-gray-400 hover:cursor-pointer hover:bg-gray-800 md:flex'
+        >
+          <Icon icon='search' class='h-3 w-3' />
+          <span class='ml-2'>Search</span>
+        </button>
+      </div>
+    </div>
+
       </li>
       <li>
         <a href='/guides' class='hidden lg:inline text-gray-400 hover:text-white'>Guides</a>
@@ -37,7 +88,7 @@ import AccountDropdown from './AccountDropdown.astro';
         <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
       </li>
       <li>
-        <AccountDropdown />
+        <AccountDropdown client:only='react' />
 
         <a
           data-guest-required
@@ -97,11 +148,13 @@ import AccountDropdown from './AccountDropdown.astro';
 
         <!-- Links for logged in users -->
         <li data-auth-required class='hidden'>
-          <a
-            href='/settings/update-profile'
-            class='text-xl hover:text-blue-300 md:text-lg'
-          >
-            Settings
+          <a href='/account' class='text-xl hover:text-blue-300 md:text-lg'>
+            Account
+          </a>
+        </li>
+        <li data-auth-required class='hidden'>
+          <a href='/team' class='text-xl hover:text-blue-300 md:text-lg'>
+            Teams
           </a>
         </li>
         <li data-auth-required class='hidden'>
@@ -115,7 +168,7 @@ import AccountDropdown from './AccountDropdown.astro';
         <li>
           <a
             data-guest-required
-            href='/signup'
+            href='/login'
             class='hidden text-xl text-white md:text-lg'
           >
             Login

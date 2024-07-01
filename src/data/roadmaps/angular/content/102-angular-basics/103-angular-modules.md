@@ -4,4 +4,5 @@ Modules in Angular act like a container where we can group the components, direc
 
 Visit the following resources to learn more:
 
-- [Introduction to Modules](https://angular.io/guide/architecture-modules)
+- [@official@Introduction to Modules](https://angular.io/guide/architecture-modules)
+- [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

@@ -10,9 +10,9 @@ Given below is the list of common algorithmic runtimes. The runtimes are listed 
 - O(n^3) - Cubic
 - O(2^n) - Exponential
 - O(n!) - Factorial
-- O(n^n) - Polynomial
+- O(n^k) - Polynomial
 
 Visit the following resources to learn more:
 
-- [Big O Notation — Calculating Time Complexity](https://www.youtube.com/watch?v=Z0bH0cMY0E8)
-- [Big O Notations](https://www.youtube.com/watch?v=V6mKVRU1evU)
+- [@video@Big O Notation — Calculating Time Complexity](https://www.youtube.com/watch?v=Z0bH0cMY0E8)
+- [@video@Big O Notations](https://www.youtube.com/watch?v=V6mKVRU1evU)

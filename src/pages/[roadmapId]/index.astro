@@ -1,18 +1,20 @@
 ---
-import FAQs from '../../components/FAQs/FAQs.astro';
+import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
+import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
-import MarkdownFile from '../../components/MarkdownFile.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../components/UpcomingForm.astro';
+import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
-generateArticleSchema,
-generateFAQSchema,
+  generateArticleSchema,
+  generateFAQSchema,
 } from '../../lib/jsonld-schema';
-import { RoadmapFrontmatter,getRoadmapIds } from '../../lib/roadmap';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -47,25 +49,33 @@ if (roadmapData.schema) {
       datePublished: roadmapSchema.datePublished,
       dateModified: roadmapSchema.dateModified,
       imageUrl: roadmapSchema.imageUrl,
-    })
+    }),
   );
 }
 
 if (roadmapFAQs.length) {
-  jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
+  jsonLdSchema.push(generateFAQSchema(roadmapFAQs as unknown as FAQType[]));
 }
 
-const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps/${roadmapId}/content`;
+const ogImageUrl =
+  roadmapData?.seo?.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'roadmap',
+    resourceId: roadmapId,
+  });
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
   briefTitle={roadmapData.briefTitle}
+  ogImageUrl={ogImageUrl}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}
   jsonLd={jsonLdSchema}
+  resourceId={roadmapId}
+  resourceType='roadmap'
 >
   <!-- Preload the font being used in the renderer -->
   <link
@@ -85,41 +95,61 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
     roadmapId={roadmapId}
     hasTopics={roadmapData.hasTopics}
     isUpcoming={roadmapData.isUpcoming}
+    isForkable={roadmapData.isForkable}
+    question={roadmapData.question}
   />
 
   <div class='bg-gray-50 pt-4 sm:pt-12'>
     {
-      !roadmapData.isUpcoming && roadmapData.jsonUrl && (
-        <div class='container relative max-w-[1000px]'>
+      !roadmapData.isUpcoming && (
+        <div class='container relative !max-w-[1000px]'>
           <ShareIcons
             description={roadmapData.briefDescription}
             pageUrl={`https://roadmap.sh/${roadmapId}`}
           />
-          <TopicDetail client:idle />
-
-          <FrameRenderer
-            resourceType={'roadmap'}
-            resourceId={roadmapId}
-            jsonUrl={roadmapData.jsonUrl}
-            dimensions={roadmapData.dimensions}
+          <TopicDetail
+            resourceTitle={roadmapData.title}
+            resourceType='roadmap'
+            client:idle
+            canSubmitContribution={true}
           />
-        </div>
-      )
-    }
 
-    {
-      !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
-        <div class='mt-0 pb-14 sm:-mt-6'>
-          <MarkdownFile>
-            <roadmapFile.Content />
-          </MarkdownFile>
+          {roadmapData?.renderer === 'editor' ? (
+            <EditorRoadmap
+              resourceId={roadmapId}
+              resourceType='roadmap'
+              dimensions={roadmapData.dimensions!}
+              client:load
+            />
+          ) : (
+            <FrameRenderer
+              resourceType={'roadmap'}
+              resourceId={roadmapId}
+              dimensions={roadmapData.dimensions}
+            />
+          )}
         </div>
       )
     }
 
     {roadmapData.isUpcoming && <UpcomingForm />}
+    <UserProgressModal
+      resourceId={roadmapId}
+      resourceType='roadmap'
+      renderer={roadmapData?.renderer}
+      client:only='react'
+    />
 
-    <FAQs faqs={roadmapFAQs} />
+    {
+      roadmapId === 'docker' && (
+        <p class='mb-8 px-5 text-center text-xs text-gray-400 sm:mb-12'>
+          Roadmap owner Insight Partners is an investor in Docker.
+        </p>
+      )
+    }
+
+    <FAQs faqs={roadmapFAQs as unknown as FAQType[]} />
+
     <RelatedRoadmaps roadmap={roadmapData} />
   </div>
 </BaseLayout>

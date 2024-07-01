@@ -4,4 +4,5 @@ The ethers.js library aims to be a complete and compact library for interacting 
 
 Visit the following resources to learn more:
 
-- [Ethers.js Documentation](https://docs.ethers.io/)
+- [@article@Ethers.js Documentation](https://docs.ethers.io/)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)
