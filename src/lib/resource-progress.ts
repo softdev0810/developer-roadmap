@@ -85,6 +85,7 @@ export function clearMigratedRoadmapProgress(
   resourceType: string,
   resourceId: string,
 ) {
+  const migratedRoadmaps = ['frontend'];
   const migratedRoadmaps = ['frontend', 'backend'];
 
   if (!migratedRoadmaps.includes(resourceId)) {
@@ -98,6 +99,7 @@ export function clearMigratedRoadmapProgress(
 
   const roadmapKey = `${resourceType}-${resourceId}-${userId}-progress`;
   const clearedKey = `${resourceType}-${resourceId}-${userId}-cleared`;
+  if (localStorage.getItem(clearedKey)) {
 
   const clearedCount = parseInt(localStorage.getItem(clearedKey) || '0', 10);
 
@@ -106,6 +108,7 @@ export function clearMigratedRoadmapProgress(
   }
 
   localStorage.removeItem(roadmapKey);
+  localStorage.setItem(clearedKey, '1');
   localStorage.setItem(clearedKey, `${clearedCount + 1}`);
 }
 
