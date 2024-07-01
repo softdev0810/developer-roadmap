@@ -1,1 +1,0 @@
-# Minimize cyclomatic complexity

@@ -2,7 +2,7 @@
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
-import { getTopicsByRoadmapId } from '../../lib/topic';
+import { getTopicsByRoadmapId } from '../../lib/roadmap-topic';
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 
 const { roadmapId } = Astro.params as Params;
 const topics = await getTopicsByRoadmapId(roadmapId);
-const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
+const roadmapFile = await import(`../../data/roadmaps/${roadmapId}/${roadmapId}.md`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 ---
 
@@ -30,7 +30,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 >
   <RoadmapHeader
     description={roadmapData.description}
-    title={`${roadmapData.featuredTitle} Topics`}
+    title={`${roadmapData.briefTitle} Topics`}
     roadmapId={roadmapId}
     hasSearch={true}
     hasTopics={false}
