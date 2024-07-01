@@ -50,13 +50,16 @@ Visit the following resources to learn more:
 - `@opensource@`
 - `@article@`
 - `@course@`
-- `@opensource@`
 - `@podcast@`
 - `@video@`
 
 It's important to add a valid type, this will help us categorize the content and display it properly on the roadmap.
 
 ## Guidelines
+
+- <p><strong>Please don't use the project for self-promotion!</strong><br />
+
+  We believe this project is a valuable asset to the developer community and it includes numerous helpful resources. We kindly ask you to avoid submitting pull requests for the sole purpose of self-promotion. We appreciate contributions that genuinely add value, such as guides from maintainers of well-known frameworks, and will consider accepting these even if they're self authored. Thank you for your understanding and cooperation!
 
 - <p><strong>Adding everything available out there is not the goal!</strong><br />
 
@@ -94,3 +97,4 @@ It's important to add a valid type, this will help us categorize the content and
   - Rewriting content in a way that doesn't add any value.
   - None English content.
   - PR's that don't follow our style guide, have no description and a default title.
+  - Links to your own blog articles.

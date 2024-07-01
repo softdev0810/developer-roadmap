@@ -1,7 +1,9 @@
 ---
 title: 'DevOps vs SRE: Key Differences Explained'
 description: 'DevOps vs SRE: Discover which role suits your career best. Learn key differences, skills required, and career prospects in our detailed guide.'
+
 authorId: kamran
+authorId: william
 excludedBySlug: '/devops/devops-vs-sre'
 seo:
   title: 'DevOps vs SRE: Key Differences Explained'

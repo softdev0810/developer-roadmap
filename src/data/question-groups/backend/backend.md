@@ -5,7 +5,7 @@ briefDescription: 'Test, rate and improve your Backend knowledge with these ques
 title: '50 Popular Backend Developer Interview Questions and Answers'
 description: 'Test, rate and improve your Backend knowledge with these questions.'
 authorId: 'fernando'
-isNew: true
+isNew: false
 date: 2024-05-24
 seo:
   title: '50 Popular Backend Developer Interview Questions and Answers'
@@ -61,7 +61,7 @@ questions:
     topics:
       - 'Beginner'
   - question: What is containerization, and how does it benefit backend development?
-    answer: statelessness-http.md
+    answer: containerization.md
     topics:
       - 'Beginner'
   - question: What measures would you take to secure a newly developed API?
@@ -141,7 +141,7 @@ questions:
     topics:
       - 'Intermediate'
   - question: Describe the concept of eventual consistency and its implications in backend systems
-    answer: api-dependencies.md
+    answer: eventual-consistency.md
     topics:
       - 'Intermediate'
   - question: What is a reverse proxy, and how is it useful in backend development?

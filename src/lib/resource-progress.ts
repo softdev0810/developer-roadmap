@@ -81,6 +81,34 @@ export async function updateResourceProgress(
   return response;
 }
 
+export function clearMigratedRoadmapProgress(
+  resourceType: string,
+  resourceId: string,
+) {
+  const migratedRoadmaps = ['frontend', 'backend'];
+
+  if (!migratedRoadmaps.includes(resourceId)) {
+    return;
+  }
+
+  const userId = getUser()?.id;
+  if (!userId) {
+    return;
+  }
+
+  const roadmapKey = `${resourceType}-${resourceId}-${userId}-progress`;
+  const clearedKey = `${resourceType}-${resourceId}-${userId}-cleared`;
+
+  const clearedCount = parseInt(localStorage.getItem(clearedKey) || '0', 10);
+
+  if (clearedCount >= 10) {
+    return;
+  }
+
+  localStorage.removeItem(roadmapKey);
+  localStorage.setItem(clearedKey, `${clearedCount + 1}`);
+}
+
 export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string,
