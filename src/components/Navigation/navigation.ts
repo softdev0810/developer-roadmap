@@ -49,6 +49,10 @@ function bindEvents() {
     ?.addEventListener('click', () => {
       window.dispatchEvent(new CustomEvent('command.k'));
     });
+      .querySelector('[data-command-menu]')
+      ?.addEventListener('click', () => {
+        window.dispatchEvent(new CustomEvent('command.k'));
+      });
 }
 
 bindEvents();
